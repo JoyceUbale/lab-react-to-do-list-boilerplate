@@ -23,7 +23,7 @@ export default class ToDoapp extends React.Component{
         // update
         let handelUpdate = (index)=>{
             let newValue = prompt("give new value")
-            let updatedArr = todoList.map((el,i)=>{
+            let updatedArr = todolist.map((el,i)=>{
                 if(i==index){
                     return newValue
                 }
@@ -35,7 +35,7 @@ export default class ToDoapp extends React.Component{
         let handleDelete = (index)=>{
             let deletedArr = todolist.filter((el,i)=>i!==index)
             console.log(deletedArr)
-            this.setState({todoList:deletedArr})
+            this.setState({todolist:deletedArr})
         }
         return(
             <>
