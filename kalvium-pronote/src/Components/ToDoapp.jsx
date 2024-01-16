@@ -42,9 +42,9 @@ export default class ToDoapp extends React.Component{
             <>
           <div className="main">
             <div className="Addtodo">
-                <input type="text"  value={textValue} onChange={handleChange} placeholder="give todo"  className="inputText"/>
-            </div>
+                <input type="text"  value={textValue} onChange={handleChange} placeholder="Type Here"  className="inputText"/>
                 <button onClick={handleClick} className="add">ADD</button>
+            </div>
                 {/* read */}
               <div className="inMain">
                {todolist.map((el,i)=>(

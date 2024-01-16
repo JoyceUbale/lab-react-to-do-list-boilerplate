@@ -2,75 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
-.main{
-    height: 670px;
-    width: 1211px;
-    background-color: rgb(120, 94, 236);
+body{
+    background-color: blueviolet;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.Addtodo{
-  background-color: rgb(0, 0, 0);
-  height: 500px;
-  width: 500px;
-}
-.inputText{
-    background-color: rgb(120, 94, 236);
-    width: 300px;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: 100px;
-    text-align: center;
-    border-radius: 20px;
-    border: none;
-    font-size: larger;
-}
-.inputText::placeholder{
-    color: white;
-}
-.add{
-    position: absolute;
-    margin-bottom: 220px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 20px;
-    border: none;
-}
-.btnsU{
-    position: absolute;
-    margin-left: -361px;
-    margin-top: 15px;
-    position: absolute;
-    margin-bottom: 220px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 20px;
-    border: none;
-}
-.btnsD{
-    position: absolute;
-    margin-left: -210px;
-    margin-top: 15px;
-    position: absolute;
-    margin-bottom: 220px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 20px;
-    border: none;
-}
-p{
-    color: white;
-    margin-left: -390px;
-    width: 300px;
-    height: 30px;
-    background-color: rgb(120, 94, 236);
-    text-align: center;
-    padding-top: 5px;
-    margin-top: -60px;
-}
-.inMain{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 100px;
 
+}
+.main{
+    background-color: bisque;
+    height: 500px;
+    width: 500px;
+    margin-top: 100px;
 }
