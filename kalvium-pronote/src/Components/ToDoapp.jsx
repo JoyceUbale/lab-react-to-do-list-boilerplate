@@ -1,4 +1,5 @@
 import React from "react";
+import './ToDoapp.css'
 export default class ToDoapp extends React.Component{
     constructor(){    //we use constructor to get the state
         super();   // to take all the properties from the parent componets to the child component
@@ -39,21 +40,22 @@ export default class ToDoapp extends React.Component{
         }
         return(
             <>
+          <div className="main">
             <div className="Addtodo">
-                <input type="text"  value={textValue} onChange={handleChange} placeholder="give todo" />
-                <button onClick={handleClick}>ADD</button>
-                </div>
+                <input type="text"  value={textValue} onChange={handleChange} placeholder="give todo"  className="inputText"/>
+            </div>
+                <button onClick={handleClick} className="add">ADD</button>
                 {/* read */}
-              <div>
+              <div className="inMain">
                {todolist.map((el,i)=>(
-                  <div key={i}>
+                  <div className="in" key={i}>
                     <p>{el}</p>
-                    <button onClick={()=>handelUpdate(i)}>Update</button>
-                    <button onClick={()=>handleDelete(i)}>Delete</button>
+                    <button onClick={()=>handelUpdate(i)} className="btnsU">Update</button>
+                    <button onClick={()=>handleDelete(i)} className="btnsD">Delete</button>
                   </div>
                ))}
               </div>
-            
+         </div> 
             </>
         )
     }
