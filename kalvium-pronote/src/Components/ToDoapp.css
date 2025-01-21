@@ -1,5 +1,3 @@
-/* ToDoapp.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +5,17 @@
   }
   
   body {
-    background-color: #4c00a0; /* Subtle blueviolet shade */
+    background-color: #4c00a0; 
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff; /* White text for readability */
+    color: #fff; 
   }
   
   .main {
-    background-color: #f5f5dc; /* Bisque */
+    background-color: #f5f5dc; 
     height: auto;
     width: 90%;
     max-width: 500px;
@@ -45,12 +43,12 @@
   }
   
   .inputText:focus {
-    border-color: #7e57c2; /* Highlight on focus */
+    border-color: #7e57c2; 
     box-shadow: 0 0 5px rgba(126, 87, 194, 0.5);
   }
   
   .add {
-    background-color: #7e57c2; /* Purple button */
+    background-color: #7e57c2; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -61,7 +59,7 @@
   }
   
   .add:hover {
-    background-color: #5e35b1; /* Darker purple */
+    background-color: #5e35b1;
   }
   
   .inMain {
@@ -74,7 +72,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff; /* White background for tasks */
+    background-color: #ffffff; 
     color: #333;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -83,7 +81,7 @@
   }
   
   .btnsU, .btnsD {
-    background-color: #5e35b1; /* Purple for buttons */
+    background-color: #5e35b1; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -94,11 +92,11 @@
   }
   
   .btnsU:hover {
-    background-color: #3949ab; /* Different shade for Update */
+    background-color: #3949ab; 
   }
   
   .btnsD:hover {
-    background-color: #d32f2f; /* Red for Delete hover */
+    background-color: #d32f2f;
   }
   
   @media (max-width: 600px) {
