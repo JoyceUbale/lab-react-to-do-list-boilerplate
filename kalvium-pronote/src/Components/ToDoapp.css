@@ -1,16 +1,124 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    background-color: blueviolet;
+/* ToDoapp.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #4c00a0; /* Subtle blueviolet shade */
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
-
-}
-.main{
-    background-color: bisque;
-    height: 500px;
-    width: 500px;
-    margin-top: 100px;
-}
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* White text for readability */
+  }
+  
+  .main {
+    background-color: #f5f5dc; /* Bisque */
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .Addtodo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .inputText {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .inputText:focus {
+    border-color: #7e57c2; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(126, 87, 194, 0.5);
+  }
+  
+  .add {
+    background-color: #7e57c2; /* Purple button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add:hover {
+    background-color: #5e35b1; /* Darker purple */
+  }
+  
+  .inMain {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* White background for tasks */
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btnsU, .btnsD {
+    background-color: #5e35b1; /* Purple for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btnsU:hover {
+    background-color: #3949ab; /* Different shade for Update */
+  }
+  
+  .btnsD:hover {
+    background-color: #d32f2f; /* Red for Delete hover */
+  }
+  
+  @media (max-width: 600px) {
+    .Addtodo {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .inputText {
+      width: 100%;
+    }
+  
+    .add {
+      width: 100%;
+    }
+  
+    .in {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
